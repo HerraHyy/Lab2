@@ -4,7 +4,7 @@ const port = 3001;
 
 // Endpoint 1: Text Response
 app.get('/text', (req, res) => {
-  res.send('This is a simple text response.');
+  res.send('This is a updated text response.');
 });
 
 // Endpoint 2: JSON Response
@@ -17,7 +17,7 @@ app.get('/json', (req, res) => {
     message: 'This is an updated JSON response.',
     timestamp: new Date()
   };
-  
+
   res.json(jsonData);
 });
 

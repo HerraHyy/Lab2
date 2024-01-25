@@ -17,7 +17,7 @@ app.get('/jsonmessage', (req, res) => {
   res.json(jsonData);
 });
 
-//Enndpoint 3: HTML Response
+//Endpoint 3: HTML Response
 app.get('/htmlmessage', (req, res) => {
     res.send('This is a simple HTML response.');
 });
