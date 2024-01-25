@@ -22,9 +22,9 @@ app.get('/htmlmessage', (req, res) => {
     res.send('This is a simple HTML response.');
 });
 
-//Endpoint 4: Greeting and time
+//Endpoint 4: Greeting and local time
 app.get('/info', (req, res) => {
-    res.send(`Hello, visitor! You are visiting at ${new Date()}`);
+    res.send(`Hello, visitor! You are visiting at ${new Date().toLocaleString()}`);
 });
 
 // Start the server
